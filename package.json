@@ -12,7 +12,8 @@
     "node": "./dist/index.cjs"
   },
   "scripts": {
-    "dev": "ts-node src/index.ts",
+    "predemo": "echo \"wget minio && setup\"",
+    "demo": "ts-node src/demo.ts",
     "build": "tsup src/index.ts",
     "start": "npm run build -- --watch",
     "lint": "tsc",
@@ -34,5 +35,9 @@
   },
   "publishConfig": {
     "assess": "public"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.276.0",
+    "await-to-js": "^3.0.0"
   }
 }

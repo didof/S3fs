@@ -1,5 +1,8 @@
 # TypeScript library template
 
+## Setup
+[Install minio](https://github.com/minio/minio).
+
 ## Bundling
 - [tsup](https://github.com/egoist/tsup)
 
